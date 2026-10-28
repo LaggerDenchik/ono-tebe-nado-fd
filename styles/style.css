@@ -1,12 +1,13 @@
-/* место для вашего кода */
+/* =====HEADER===== */
+
 .header {
   display: grid;
-  align-items: center;
   grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
   padding: 95px 50px 100px;
+  color: #000000;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
 }
 
 .header__logo {
@@ -30,12 +31,11 @@
 }
 
 .address {
-  box-sizing: border-box;
-  width: 240px;
   display: flex;
-  align-items: start;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 240px;
   font-style: normal;
 }
 
@@ -49,4 +49,81 @@
 
 .header__link_active {
   text-decoration: none;
+}
+
+/* =====COVER===== */
+
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 106px;
+  min-height: 757px;
+  padding: 165px 50px 50px;
+  color: #fff;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+  background-color: #000000;
+}
+
+.cover__title {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 128%;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: flex;
+}
+
+.aligned-text_start {
+  justify-content: start;
+}
+
+.aligned-text_center {
+  justify-content: center;
+}
+
+.aligned-text_end {
+  justify-content: end;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 51px;
+}
+
+.cover__description-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 19px;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #00000000;
 }
