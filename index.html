@@ -49,10 +49,12 @@
            через отрицательный margin-right. На одном из вебинаров нам показывали 
            пример с третьего спринта, где так и выравнивали текст через 
            отрицательный margin. Методом перебора я также подогнал высоты через 
-           line-height. По-другому я не знаю как подогнать под макет-->
-          <span class="aligned-text aligned-text_left">оно</span>
-          <span class="aligned-text aligned-text_center">тебе</span>
-          <span class="aligned-text aligned-text_right">надо</span>
+           line-height-->
+
+           <!-- Подсказка от коллег с когорты: обернул буквы и убрал отрицательный margin-->
+          <span class="aligned-text aligned-text_left letter-spacing-extended">оно</span>
+          <span class="aligned-text aligned-text_center letter-spacing-extended">теб<span class="no-letter-spacing">е</span></span>
+          <span class="aligned-text aligned-text_right letter-spacing-extended">над<span class="no-letter-spacing">о</span></span>
         </h1>
         <div class="cover__description">
           <p class="cover__description-text">
@@ -176,7 +178,10 @@
       <div class="footer__social">
         <ul class="footer__social-list">
           <li class="footer__social-list-item">
-            <a target="_blank" class="footer__social-link">
+            <!-- Я учёл замечание по target="_blank", но автотесты не пускают 
+             без атрибута href="" в таком случае, осталять пусой href не 
+             рекомендуется по чек-листу-->
+            <a class="footer__social-link">
               <img
                 class="footer__social-icon"
                 src="./images/yt.svg"
@@ -185,12 +190,12 @@
             </a>
           </li>
           <li class="footer__social-list-item">
-            <a target="_blank" class="footer__social-link">
+            <a class="footer__social-link">
               <img class="footer__social-icon" src="./images/vk.svg" alt="VK" />
             </a>
           </li>
           <li class="footer__social-list-item">
-            <a target="_blank" class="footer__social-link">
+            <a class="footer__social-link">
               <img
                 class="footer__social-icon"
                 src="./images/pinterest.svg"

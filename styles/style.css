@@ -76,6 +76,7 @@
   position: relative;
   z-index: 1;
   font-size: 100px;
+  letter-spacing: 0.3em;
   line-height: 1.15em;
   text-transform: uppercase;
 }
@@ -85,22 +86,20 @@
 }
 
 .aligned-text_left {
-  letter-spacing: 0.3em;
   text-align: left;
+}
+.no-letter-spacing{
+  letter-spacing: 0;
 }
 
 .aligned-text_center {
   line-height: 1.5em;
-  letter-spacing: 0.3em;
   text-align: center;
-  margin-right: -0.3em;
 }
 
 .aligned-text_right {
   line-height: 1.3em;
-  letter-spacing: 0.3em;
   text-align: right;
-  margin-right: -0.3em;
 }
 
 .cover__description {
