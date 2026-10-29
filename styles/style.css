@@ -257,3 +257,51 @@
   font-size: 20px;
   line-height: 24px;
 }
+
+/* =====FOOTER===== */
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 100px;
+  padding: 80px 50px;
+}
+
+.footer__menu {
+  justify-self: center;
+  align-self: flex-start;
+}
+
+.footer__social {
+  justify-self: flex-end;
+  align-self: flex-start;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.footer__menu-link {
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: underline;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  list-style-type: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+}
